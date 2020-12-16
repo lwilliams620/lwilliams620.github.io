@@ -414,6 +414,9 @@ function startFunction() {
                 }
             }
         }],
-        colors: ['#cfe8f3', '#73bfe2', '#1696d2', '#0a4c6a', '#000000']
+        colors: ['#cfe8f3', '#73bfe2', '#1696d2', '#0a4c6a', '#000000'],
+        accessibility: {
+            description: 'This is a map of California, showing arrest per 100,000 for each county.'
+        }
     });
 }

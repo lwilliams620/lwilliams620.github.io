@@ -18,10 +18,15 @@
     </head>
     <body onload="startFunction()">
         <header class="centered">
-            <h1>A Comparison of Arrests in California by Ethnicity in 2019</h1>
-            <h4>Author: Lukas Williams</h4>
-            <p>Arrest data is from <a href="https://openjustice.doj.ca.gov/data">The California Department of Justice</a>.</p>
-            <p>2019 Population Estimates are from <a href="https://www.counties.org/data-and-research">The California State Association of Counties</a>.</p>
+            <h1>Are Black Californians More Likely to be Arrested?</h1>
+            <h3>A Comparison of Arrests in California by Ethnicity in 2019</h3>
+            <h5>Author: Lukas Williams</h5>
+            <p>Disclaimers:
+                <br />
+                These are visualizations of arrest data, not convictions. Not every arrest will necessarily lead to a conviction, or a conviction in the same category.
+                <br />
+                Population percentages are estimates from 2019.
+            </p>
         </header>
         <main>
             <hr />
@@ -47,17 +52,17 @@
             </section>
             <hr />
             <section class="centered">
+                <p>Below is an interactive map of California and its counties, along with a table containing arrest data.</p>
+                <p>Clicking on a county will update the table for that county. Clicking the county again will de-select it.</p>
+                <p>Ranges were taken as 20% quantiles of the original data set.</p>
                 <div id="map" style="width:50%;"></div>
+                <noscript>No JS: This is a map of California, showing arrest per 100,000 for each county.</noscript>
             </section>
         </main>
         <footer>
-            <p>introduction info, authorship, data considerations</p>
-            <p>interactive choropleth, table next to choropleth map, alt text / accessibility for map, text describing map and table</p>
-            <p>write up</p>
-            <p>sources</p>
-            <p>sign up for in person review session</p>
-            <a href="https://pages.github.com/">web hosting</a>
-            <a href="http://urbaninstitute.github.io/graphics-styleguide/">style guide</a>
+            <p>Sources:</p>
+            <p>Arrest data is from <a href="https://openjustice.doj.ca.gov/data">The California Department of Justice</a>.</p>
+            <p>2019 Population Estimates are from <a href="https://www.counties.org/data-and-research">The California State Association of Counties</a>.</p>
         </footer>
     </body>
 </html>
