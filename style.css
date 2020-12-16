@@ -24,3 +24,19 @@ p {
 .centered {
     text-align: center;
 }
+
+th {
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+td {
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+caption {
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 18px;
+}
