@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TODO</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+        <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/data.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        <script src="https://code.highcharts.com/mapdata/countries/us/us-ca-all.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body onload="startFunction()">
+        <header class="centered">
+            <h1>A Comparison of Arrests in California by Ethnicity in 2019</h1>
+            <h4>Author: Lukas Williams</h4>
+            <p>Arrest data is from <a href="https://openjustice.doj.ca.gov/data">The California Department of Justice</a>.</p>
+            <p>2019 Population Estimates are from <a href="https://www.counties.org/data-and-research">The California State Association of Counties</a>.</p>
+        </header>
+        <main>
+            <hr />
+            <section class="centered">
+                <p>Black Californians are arrested at a higher rate by population than any other ethnicity.</p>
+                <p>They make up <em>6.5%</em> of California's population, but are <em>16%</em> of arrests.</p>
+                <div id="line1" class="container"></div>
+                <noscript>No JS: This is a line chart comparing the population percentage of each ethnicity in California, compared to the arrest percentage for each ethnicity in California.</noscript>
+            </section>
+            <hr />
+            <section class="centered">
+                <p>When looking at the type of arrests, Black Californians are arrested for more felonies than other ethnicities.</p>
+                <p><em>36.0%</em> of their arrests are for felonies, when the average for all other ethnicities is <em>26.4%</em>.</p>
+                <div id="bar1" class="container"></div>
+                <noscript>No JS: This is a stacked column chart comparing felony and misdemeanor arrests for each ethnicity in California.</noscript>
+            </section>
+            <hr />
+            <section class="centered">
+                <p>Black Californians are more likely to be arrested for violent felonies, defined as homicide, rape, robbery,  assault, and kidnapping.</p>
+                <p><em>41%</em> of their arrests are in this category, compared to <em>36%</em> for all other ethnicities.</p>
+                <div id="radar1" class="container"></div>
+                <noscript>No JS: This is radar chart comparing types of felony arrests for Black Californians and all other ethnicities in California.</noscript>
+            </section>
+            <hr />
+            <section class="centered">
+                <div id="map" style="width:50%;"></div>
+            </section>
+        </main>
+        <footer>
+            <p>introduction info, authorship, data considerations</p>
+            <p>interactive choropleth, table next to choropleth map, alt text / accessibility for map, text describing map and table</p>
+            <p>write up</p>
+            <p>sources</p>
+            <p>sign up for in person review session</p>
+            <a href="https://pages.github.com/">web hosting</a>
+            <a href="http://urbaninstitute.github.io/graphics-styleguide/">style guide</a>
+        </footer>
+    </body>
+</html>
