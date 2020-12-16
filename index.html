@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>TODO</title>
+        <title>DSC106 Final Project</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="script.js"></script>
         <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -23,7 +23,7 @@
             <h5>Author: Lukas Williams</h5>
             <p>Disclaimers:
                 <br />
-                These are visualizations of arrest data, not convictions. Not every arrest will necessarily lead to a conviction, or a conviction in the same category.
+                These are visualizations of arrests, not convictions. Not every arrest will necessarily lead to a conviction, or even a conviction in the same category.
                 <br />
                 Population percentages are estimates from 2019.
             </p>
@@ -54,15 +54,21 @@
             <section class="centered">
                 <p>Below is an interactive map of California and its counties, along with a table containing arrest data.</p>
                 <p>Clicking on a county will update the table for that county. Clicking the county again will de-select it.</p>
-                <p>Ranges were taken as 20% quantiles of the original data set.</p>
-                <div id="map" style="width:50%;"></div>
-                <noscript>No JS: This is a map of California, showing arrest per 100,000 for each county.</noscript>
+                <p>Ranges were taken as 20% quantiles.</p>
+                <section>
+                    <div id="map" style="float: left; width:50%;"></div>
+                    <noscript>No JS: This is a map of California, showing arrest per 100,000 for each county.</noscript>
+                    <table style="float:left; width:50%;">
+                    </table>
+                </section>
             </section>
         </main>
         <footer>
-            <p>Sources:</p>
-            <p>Arrest data is from <a href="https://openjustice.doj.ca.gov/data">The California Department of Justice</a>.</p>
-            <p>2019 Population Estimates are from <a href="https://www.counties.org/data-and-research">The California State Association of Counties</a>.</p>
+            <section class="centered" style="clear: left;">
+                <p>Sources:</p>
+                <p>Arrest data is from <a href="https://openjustice.doj.ca.gov/data">The California Department of Justice</a>.</p>
+                <p>2019 Population Estimates are from <a href="https://www.counties.org/data-and-research">The California State Association of Counties</a> and <a href="https://www.census.gov/content/census/en/search-results.html?stateGeo=none&q=california%20population%20ca&searchtype=web&page=1">The US Census</a>.</p>
+            </section>
         </footer>
     </body>
 </html>
